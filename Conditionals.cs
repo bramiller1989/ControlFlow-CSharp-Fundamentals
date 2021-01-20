@@ -46,6 +46,28 @@ namespace ControlFlow
             Portrait
         }
 
+        public void Exercise4()
+        {
+            Console.WriteLine("What is the speed limit? ");
+            var speedLimit = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("What is the speed of this car? ");
+            var carSpeed = Convert.ToInt32(Console.ReadLine());
+
+            if (carSpeed < speedLimit)
+                Console.WriteLine("Ok");
+            else
+            {
+                const int kmPerDemeritPoint = 5;
+                var demeritPoints = (carSpeed - speedLimit) / kmPerDemeritPoint;
+
+                if (demeritPoints > 12)
+                    Console.WriteLine("License Suspended");
+                else
+                    Console.WriteLine("Demerit points: " + demeritPoints);
+            }
+        }
+
         static void Main(string[] args)
         {
 
