@@ -40,12 +40,6 @@ namespace ControlFlow
             Console.WriteLine("Image orientation is " + orientation);
         }
 
-        public enum ImageOrientation
-        {
-            Landscape,
-            Portrait
-        }
-
         public void Exercise4()
         {
             Console.WriteLine("What is the speed limit? ");
