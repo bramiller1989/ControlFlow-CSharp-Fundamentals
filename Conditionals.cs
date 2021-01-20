@@ -70,6 +70,13 @@ namespace ControlFlow
 
         static void Main(string[] args)
         {
+            Conditionals conditionals = new Conditionals();
+
+            conditionals.Exercise1();
+            conditionals.Exercise2();
+            conditionals.Exercise3();
+            conditionals.Exercise4();
+
 
         }
     }
