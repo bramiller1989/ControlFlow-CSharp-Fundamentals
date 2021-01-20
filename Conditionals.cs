@@ -37,7 +37,13 @@ namespace ControlFlow
             var height = Convert.ToInt32(Console.ReadLine());
 
             var orientation = width > height ? ImageOrientation.Landscape : ImageOrientation.Portrait;
-            Console.WriteLine("Image orientation is " + orientation;
+            Console.WriteLine("Image orientation is " + orientation);
+        }
+
+        public enum ImageOrientation
+        {
+            Landscape,
+            Portrait
         }
 
         static void Main(string[] args)
