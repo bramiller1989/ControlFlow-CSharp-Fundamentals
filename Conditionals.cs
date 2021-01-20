@@ -28,6 +28,18 @@ namespace ControlFlow
             Console.WriteLine("Max is " + max);
         }
 
+        public void Exercise3()
+        {
+            Console.WriteLine("Image width: ");
+            var width = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Image height: ");
+            var height = Convert.ToInt32(Console.ReadLine());
+
+            var orientation = width > height ? ImageOrientation.Landscape : ImageOrientation.Portrait;
+            Console.WriteLine("Image orientation is " + orientation;
+        }
+
         static void Main(string[] args)
         {
 
